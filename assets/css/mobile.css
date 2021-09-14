@@ -1,0 +1,81 @@
+.container {
+  padding: 0px; }
+
+.box {
+  float: none;
+  width: 100%; }
+
+.social-box {
+  margin-bottom: 30px;
+  opacity: 0.8; }
+  .social-box img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+
+#navbar h1 {
+  float: none;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center; }
+
+#navbar ul {
+  float: none; }
+  #navbar ul li {
+    float: none; }
+  #navbar ul a {
+    display: block;
+    padding: 10px;
+    text-align: center; }
+  #navbar ul a.current {
+    width: 100%; }
+
+#showcase {
+  height: 600px;
+  padding-top: 80px; }
+  #showcase h1 {
+    line-height: 4rem; }
+
+#home {
+  height: 400px;
+  background: #333; }
+
+.home-image {
+  float: none;
+  width: 100%;
+  min-height: 100%; }
+
+.home-info {
+  display: none; }
+
+.about {
+  padding: 30px; }
+  .about .about-info {
+    float: none;
+    width: 100%;
+    text-align: justify; }
+    .about .about-info h2 {
+      text-align: center;
+      font-size: 36px;
+      padding-bottom: 25px;
+      line-height: 2rem; }
+  .about .about-img {
+    float: none;
+    width: 100%; }
+    .about .about-img img {
+      margin-top: 10px; }
+
+.social-proof {
+  padding-top: 60px; }
+
+.contact {
+  padding: 30px;
+  text-align: center; }
+  .contact h1 {
+    font-size: 36px;
+    margin-bottom: 15px; }
+
+.contact-info .box {
+  border: 1px solid #444; }

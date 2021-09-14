@@ -1,0 +1,328 @@
+// @font-face {
+//    font-family: 'Bison';
+//    src: url('../fonts/Bison-Bold.woff2') format('woff2'),
+//        url('../fonts/Bison-Bold.woff') format('woff');
+//    font-weight: 300;
+//    font-style: normal;
+//    font-display: swap;
+// }
+
+@import "variables";
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Main Styling
+
+body {
+  background: $light-color;
+  color: $dark-color;
+  font-family: $ff-regular;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+// Utility Classes
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+  overflow: auto;
+  padding: 0px 90px;
+}
+
+.primary_text {
+  color: $primary-color;
+}
+
+.ff-title {
+  font-family: $ff-title;
+}
+
+.btn {
+  padding: 18px 27px;
+  background: $dark-color;
+  color: $light-color;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $primary-color;
+  color: $dark-color;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.social-box {
+  background: $primary-color;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+  max-width: 870px;
+
+  img {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.clr {
+  clear: both;
+}
+
+// Navbar
+
+#navbar {
+  background-color: $dark-color;
+  overflow: auto;
+
+  a {
+    color: $light-color;
+    padding-top: 20px;
+  }
+
+  h1 {
+    float: left;
+    padding-top: 20px;
+  }
+
+  ul {
+    float: right;
+
+    li {
+      float: left;
+    }
+
+    a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a:hover,
+    a.current {
+      background: #444;
+      color: $primary-color;
+    }
+  }
+}
+
+// Showcase
+
+#showcase {
+  background: url("../imgs/showcase.jpg") no-repeat center center/cover;
+  height: 620px;
+  text-align: center;
+  color: $light-color;
+  padding-top: 160px;
+
+  h1 {
+    margin: 2rem;
+    font-size: 3.8rem;
+  }
+
+  p {
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+// Home
+
+#home {
+  height: 400px;
+  background: $dark-color;
+}
+
+.home-image {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+  background: url("../imgs/photo_1.jpg") no-repeat center center/cover;
+}
+
+.home-info {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+  text-align: center;
+  color: $light-color;
+  padding: 56px 32px;
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    margin: 25px 0px 35px;
+  }
+
+  a {
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  a:hover {
+    background-color: $primary-color;
+    color: $dark-color;
+  }
+}
+
+// features
+
+.features__location {
+  h3 {
+    padding: 20px;
+  }
+}
+.features__meals {
+  background: $primary-color;
+
+  h3 {
+    padding: 20px;
+  }
+}
+.features__fitness {
+  h3 {
+    padding: 20px;
+  }
+}
+
+// Footer
+
+.main-footer {
+  padding: 30px;
+  text-align: center;
+  background: #444;
+  color: $light-color;
+}
+
+// About
+
+.about {
+  padding: 30px;
+
+  .about-info {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+
+    h2 {
+      font-size: 40px;
+      padding-bottom: 30px;
+      line-height: 1.9rem;
+    }
+    p {
+      padding-bottom: 15px;
+      line-height: 1.7rem;
+    }
+  }
+
+  .about-img {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+
+    img {
+      display: block;
+      margin: auto;
+      width: 70%;
+      border-radius: 50%;
+      // min-height: 100%;
+    }
+  }
+}
+
+// Social Proof
+
+.social-proof {
+  height: 600px;
+  background: url(../imgs/test_bg.jpg) no-repeat center center/cover;
+  padding-top: 100px;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 2.2rem;
+  }
+}
+
+// Contact Us
+
+.contact {
+  padding: 30px 0px;
+  h1 {
+    font-size: 40px;
+    line-height: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.form {
+  button {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+}
+
+.form-group {
+  margin-top: 15px;
+
+  label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+  }
+}
+
+// Contact Info
+
+.contact-info {
+  background: $dark-color;
+  color: #fff;
+
+  h3 {
+    padding: 10px 0px 20px;
+  }
+}
